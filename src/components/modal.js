@@ -5,7 +5,8 @@ const AddMovieModal = ({ addMovie }) => {
     title: '',
     description: '',
     posterURL: '',
-    rating: ''
+    rating: '',
+    trailerURL:''
   });
 
   const handleChange = (event) => {
@@ -16,7 +17,7 @@ const AddMovieModal = ({ addMovie }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     addMovie(newMovie);
-    setNewMovie({ title: '', description: '', posterURL: '', rating: '' });
+    setNewMovie({ title: '', description: '', posterURL: '', rating: '' ,trailerURL:""});
   };
 
   return (
@@ -34,6 +35,12 @@ const AddMovieModal = ({ addMovie }) => {
       <label>
         Poster URL:
         <input type="text" name="posterURL" value={newMovie.posterURL} onChange={handleChange} />
+      </label>
+      <br />
+      <br />
+      <label>
+        trailerURL URL:
+        <input type="text" name="trailerURL" value={newMovie.trailerURL} onChange={handleChange} />
       </label>
       <br />
       <label>

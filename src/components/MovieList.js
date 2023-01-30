@@ -13,6 +13,7 @@ function MovieList({ movies }) {
           description={movie.description}
           posterURL={movie.posterURL}
           rating={movie.rating}
+          trailerURL={movie.trailerURL}
         />
       ))}
     </div>

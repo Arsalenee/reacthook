@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ddd;
+  background:red;
+    background: radial-gradient(#252525, #181818, #212121);
+    background-position: center; 
+    height: 270vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    user-select: none;
+}
+.img {
+    width: 280px;
+    height: 350px;
+    margin: 0 auto 20px;
+    background-color: tomato;
+    border-radius: 8px;
+    background: url('https://fr.web.img6.acsta.net/pictures/17/11/07/13/40/0517792.jpg');
+    position: relative;
+    box-shadow: 0 0 10px 3px #e97101;
+    background-size: contain;
+}
+.rating {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    margin: 10px 0 15px;
+    position: relative;
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  .para {
+    font-size: 0.8em;
+  }
